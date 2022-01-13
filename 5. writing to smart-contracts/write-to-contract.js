@@ -3,7 +3,7 @@ const Tx = require('ethereumjs-tx').Transaction;
 const Web3 = require('web3');
 let url = `https://ropsten.infura.io/v3/${process.env.API_KEY}`;
 const web3 = new Web3(url);
-const abi = require('../public/abi.json');
+const abi = require('../public/NORD-data/abi.json');
 
 const address1 = '0x669b140D0ca95F45f4Cf87255bE02E4583FF04CE';
 const privateKey1Buffer = Buffer.from(process.env.PRIVATE_KEY_1, 'hex');

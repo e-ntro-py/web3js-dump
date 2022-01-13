@@ -2,7 +2,7 @@ require('dotenv').config();
 const Web3 = require('web3');
 const url = `https://ropsten.infura.io/v3/${process.env.API_KEY}`;
 const web3 = new Web3(url);
-const abi = require('../public/abi.json');
+const abi = require('../public/NORD-data/abi.json');
 
 const contractAddress = '0xb815a5f0dd05Ad0D89304D51cb03aff772134432';
 const nordcoinContract = new web3.eth.Contract(abi, contractAddress);

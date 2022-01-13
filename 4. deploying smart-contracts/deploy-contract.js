@@ -1,5 +1,5 @@
 require('dotenv').config();
-const bytecode = require('../public/bytecode.json')
+const bytecode = require('../public/NORD-data/bytecode.json')
 const Tx = require('ethereumjs-tx').Transaction;
 const Web3 = require('web3');
 const url = `https://ropsten.infura.io/v3/${process.env.API_KEY}`;

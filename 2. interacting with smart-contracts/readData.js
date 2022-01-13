@@ -1,5 +1,5 @@
 require('dotenv').config();
-let abi = require('./abi.json');
+let abi = require('../public/HEX-tokenData/abi.json');
 let Web3 = require('web3');
 
 let url = `https://mainnet.infura.io/v3/${process.env.API_KEY}`;
